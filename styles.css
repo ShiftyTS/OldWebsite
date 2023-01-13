@@ -1,0 +1,239 @@
+.fa {
+    padding: 12px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .fa-envelope {
+    background: brown;
+    color: white;
+  }
+
+  .fa-github {
+    background: black;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #0077b5;
+    color: white;
+  }
+
+  .fa-file {
+    background: #D2B48C;
+    color: white;
+  }
+
+  body {
+    border: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+  .main {
+    background-image: url("./images/newbg.png");
+    background-repeat: no-repeat;
+    background-size:contain ;
+    display: flex;
+    height: 100vh;
+    background-color: rgb(211,229,234);
+    justify-content: center;
+    flex-wrap:wrap;
+    overflow: auto;
+    resize: both;
+  }
+  
+  .face {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: 800px;
+  }
+
+  h1 {
+    display: flex;
+    font-size: 2.3vw;
+    max-width: 550px;
+    overflow: auto;
+  }
+
+   h2 {
+    max-width: 600px;
+    font-size: 2.3vw;
+    color: black;
+    font-family: monospace;
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
+
+  .left-side {
+    font-family: sans-serif;
+    margin: 0px -100px 0;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    flex-shrink: 3;
+  }
+  .right-side {
+    font-family: monospace;
+    margin: 0px 0px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+    box-sizing: border-box;
+    resize:horizontal;
+  }
+
+  ul {
+    justify-content: flex-start;
+    padding-left: 10px;
+    border-radius: 4px;
+  }
+
+  .portfolio {
+    height: 100vh;
+  }
+  .title {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    margin-bottom: -25px;
+    color: black;
+    font-size: 5vh;
+    display: flex;
+  }
+
+  .wrapper {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-height: 2000px;
+    max-width: 1600px;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  .fade-in-section {
+    width: 375px;
+    height: 215px;
+    background-color: #069;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 60px;
+    box-sizing: border-box;
+    margin: 12px;
+    opacity: 0;
+    box-shadow: inset 0px 0px 1px 0.2px black, 0px 0px 3px 0.2px black;  
+    backface-visibility: hidden;
+    border-radius: 15px;
+    object-fit: cover;
+    position: relative;
+    z-index: -2;
+    margin-bottom: 0px;
+  }
+
+  .col1 {
+    transition: .5s ease;
+    position: relative;
+  }
+
+  .abc {
+    transition: .5s ease;
+    display: flex;
+    position: relative;
+  }
+  .abc:hover {
+    filter: brightness(45%);
+  }
+
+  .abc:hover h4 {
+    opacity: 1;
+  }
+
+  h4 {
+    text-align: center;
+    margin-bottom: 10px;
+    opacity: 0;
+  }
+
+  .hovbtn1 {
+    margin-left: 175px;
+    opacity: 0;
+  }
+
+  .text {
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 951px) {
+    .right-side {
+      width: 90vh;
+      justify-content: left;
+      padding-left: 20px;
+    }
+    h1 {
+      font-size: 5vw;
+    }
+    h2 {
+      font-size: 5vw;
+    }
+  }
