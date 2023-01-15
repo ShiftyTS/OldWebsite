@@ -1,1 +1,1 @@
-# (https://shiftyts.github.io/)
+# https://shiftyts.github.io/
